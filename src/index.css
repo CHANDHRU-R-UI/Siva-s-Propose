@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-handwriting: "Dancing Script", cursive;
+  --font-sans: "Poppins", sans-serif;
+  --color-rose: #e11d48;
+  --color-soft-pink: #fbcfe8;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 min-h-screen text-gray-900;
+  overflow-x: hidden;
+  touch-action: manipulation;
+}
